@@ -1,0 +1,31 @@
+.banner{
+    background-color:	#FFC0CB;
+    color:rgb(28, 25, 25);
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: 6px 6px 6px rgb(111, 110, 110);
+    padding: 1.5em;
+}
+.menu{
+    background-color: #FFF0F5;
+    display: flex;
+    gap: 0.4em;
+    font-size: 1.5em;
+    padding: 0.3em;
+}
+.menu a{
+    color: black;
+    background-color: #FFC0CB;
+    text-decoration: none;
+    padding: 0.3em;
+    border-radius: 15px;
+    min-width: 80px;
+    text-align: center;
+}
+.menu a:hover{
+    background-color: rgb(253, 153, 206);
+}
+.divider{
+    flex: 1 1 auto;
+}
