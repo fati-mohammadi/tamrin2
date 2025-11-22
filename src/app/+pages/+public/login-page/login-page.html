@@ -1,1 +1,28 @@
-<p>login-page works!</p>
+<section class="login">
+    <div>
+        <label for="name">نام کاربری</label>
+        <input required [(ngModel)]="username" id="name" type="text" placeholder="نام کاربری">
+         @if (username=='') {
+        <label class="sub">الزامی است</label>}
+    </div>
+     <div>
+        <label for="password">کلمه عبور</label>
+        <input required [(ngModel)]="password" id="password" type="password" placeholder="کلمه عبور">
+        @if (password=='') {
+            <label class="sub">الزامی است</label>
+        } 
+    </div>
+    <div>
+        <input [(ngModel)]="remember" id="checkbox" type="checkbox">
+        <label for="checkbox">من را به خاطر بسپار</label>
+    </div>
+    <div>
+        <button [disabled]="username=='' || password==''" (click)="check()">ورود</button>
+    </div>
+    @if (message!='') {
+              <div class="message">
+          {{message}}
+          </div>
+    }
+ 
+</section>

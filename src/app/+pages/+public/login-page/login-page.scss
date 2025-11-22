@@ -1,0 +1,59 @@
+:host{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 60vh;
+    margin-top: 150px;
+}
+.login{
+    background-color: white;
+    padding: 1.3em;
+    border: 15px solid rgb(102, 167, 200);
+    border-radius: 15px;
+    box-shadow: 0 0 0.8em 0.3em gray;
+    div{
+        margin: 0.5em 0;
+        input[type=text],[type=password]{
+            width: 100%;
+            padding: 0.4em;
+           
+         box-sizing: border-box;
+
+          
+        }
+        input:focus{
+            outline-color: rgb(169, 215, 239);
+        }
+       input:invalid{
+        background-color: rgb(238, 207, 207);
+       }
+       .sub{
+        color: red;
+        font-size: small;
+       }
+    }
+    button{
+        width: 100%;
+        background-color:rgb(102, 167, 200) ;
+        color: white;
+    }
+    button[disabled]{
+    background-color: rgb(196, 230, 231);
+    color: gray
+}
+    
+}
+
+   lable:not(:last-child){
+        display: block;
+
+    } 
+    
+.message{
+    background-color: rgb(233, 146, 143);
+    color: black;
+    padding: 0.4em;
+    border-radius: 15px;
+    text-align: center;
+    font-size: small;
+}
